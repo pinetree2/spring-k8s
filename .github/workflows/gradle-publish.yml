@@ -33,13 +33,13 @@ jobs:
         container port: 3306
         mysql version: '8.0'
         mysql database: 'istory'
-        mysql user: ${{ secrets.MYSQL_USER }}
+        #mysql user: ${{ secrets.MYSQL_USER }}
         mysql root password: ${{ secrets.MYSQL_ROOT_PW }}
         mysql password: ${{ secrets.MYSQL_PW }}
 
 
 
-    - name: 4. Build with Gradle
+    - name: 5. Build with Gradle
       uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
       with:
         arguments: build
