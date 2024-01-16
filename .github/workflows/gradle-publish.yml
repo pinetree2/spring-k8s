@@ -10,10 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
+    runs-on: ubuntu-20.04
 
     steps:
     - name: 1. Checkout Source
@@ -29,7 +26,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: 4. Build with Gradle
-      uses: gradle/gradle-build-action@v2 # v2.6.0
+      uses: gradle/gradle-build-action@bd5760595778326ba7f1441bcf7e88b49de61a25 # v2.6.0
       with:
         arguments: build
 
