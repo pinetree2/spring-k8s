@@ -33,7 +33,7 @@ jobs:
         container port: 3306
         mysql version: '8.0'
         mysql database: 'istory'
-        #mysql user: ${{ secrets.MYSQL_USER }}
+        mysql user: ${{ secrets.MYSQL_USER }}
         mysql root password: ${{ secrets.MYSQL_ROOT_PW }}
         mysql password: ${{ secrets.MYSQL_PW }}
 
